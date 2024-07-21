@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+    <!-- navbar -->
+    <nav class="w-full flex flex-wrap justify-start md:justify-end p-[10px]">
+        <a href="./guest.html">
+            <button type="button" class="h-10 w-32 m-[10px] items-center rounded-full 
+    bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 p-[1.5px]
+     text-white" onclick="logout()">
+                <div class="flex h-full w-full items-center justify-center rounded-full bg-gray-900">Log Out</div>
+            </button>
+        </a>
+    </nav>
+    <!-- navbarends -->
+    <!-- mainhead -->
+    <h1 class=" font-sans text-transparent bg-clip-text bg-white font-bold text-2xl w-auto text-center 
+    to-slate-700 md:text-5xl m-[10px] md:w-[565px] h-auto md:ms-[500px]" id="usernamedisplay">Pleaes Login To access
+        This Page</h1>
+    <!-- mainheadends  -->
+    <!-- backgroundcolor -->
+    <div class="circlePosition bg-gradient-to-r from-blue-500 to-red-500
+    w-[80%] h-[400px] rounded-[100%] blur-[100px] relative left-[10%] top-[30%]">
+    </div>
+    <!-- backgroundcolorends -->
+    <!-- main transparent -->
+    <div class=" absolute  md:top-[30%] w-full h-auto top-[20%] flex flex-wrap align-center 
+        justify-center md:space-x-10 my-5 space-y-6 md:space-y-0">
+
+        <div class=" bg-[white]/40 z-10 w-auto h-3/6 p-[40px] rounded-2xl">
+
+            <div class="w-auto h-auto flex flex-wrap flex-col space-y-4">
+
+                <label for="" class="text-2xl text-slate-200 font-semibold">Enter Deposite Amount</label>
+
+                <input type="text" name="name" id="depositeamount"
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900
+                     placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <button type="button" class="h-10 w-32 m-[10px] items-center rounded-full 
+                bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 p-[1.5px]
+                 text-white" onclick="deposite()">
+                    <div class="flex h-full w-full items-center justify-center rounded-full bg-gray-900">
+                        Deposite</div>
+                </button>
+
+            </div>
+        </div>
+        <div class=" bg-[white]/40 z-10 w-auto h-3/6 p-[40px] rounded-2xl">
+
+            <div class="w-auto h-auto flex flex-wrap flex-col space-y-4">
+                <div class="bg-[white]/80 w-auto h-auto p-[20px] rounded-xl">
+                    <h1 class="text-lg font-semibold" id="usernamesheet"></h1>
+                    <h1 class="text-lg font-semibold" id="accontnumbersheet"></h1>
+                    <h1 class="text-lg font-semibold" id="showbalancesheet"></h1>
+                </div>
+                <button type="button" class="h-12 w-[200px] m-[10px] items-center rounded-full 
+                bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 p-[1.5px]
+                 text-white" onclick="showbalance()">
+                    <div class="flex h-full w-full items-center justify-center rounded-full bg-gray-900 p-5">
+                        Show Bank balance</div>
+                </button>
+
+            </div>
+        </div>
+        <div class=" bg-[white]/40 z-10 w-auto h-3/6 p-[40px] rounded-2xl">
+
+            <div class="w-auto h-auto flex flex-wrap flex-col space-y-4">
+
+                <label for="" class="text-2xl text-slate-200 font-semibold">Enter WithDraw Amount</label>
+
+                <input type="text" name="name" id="withdrawamount"
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900
+                     placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <button type="button" class="h-10 w-32 m-[10px] items-center rounded-full 
+                bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 p-[1.5px]
+                 text-white" onclick="withdraw()">
+                    <div class="flex h-full w-full items-center justify-center rounded-full bg-gray-900">
+                        WithDraw</div>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <!-- main transparent ends -->
+</body>
+<script src="app.js"></script>
+
+</html>
